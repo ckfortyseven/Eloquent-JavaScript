@@ -43,25 +43,31 @@
 
 // EXERCISE 2 (Reversing an Array)
 
-// Returning a new array
-function reverseArray(arrayToReverse) {
-   let count = arrayToReverse.length - 1;
-   let result = [];
-   for (let i = count; i >= 0; i--) {
-        result.push(arrayToReverse[i]);
-   } 
-   return result;
-}
+// // Returning a new array
+// function reverseArray(arrayToReverse) {
+//    let count = arrayToReverse.length - 1;
+//    let result = [];
+//    for (let i = count; i >= 0; i--) {
+//         result.push(arrayToReverse[i]);
+//    } 
+//    return result;
+// }
 
-//reverseArray() testing -- WORKS OK
-let test = [1, 2, 3, 4, 5];
-// console.log(reverseArray(test));
+// //reverseArray() testing -- WORKS OK
+// let test = [1, 3, 5, 7, 9, 11];
+// // console.log(reverseArray(test));
 
-// Modifying original array
-function reverseArrayInPlace(arrayToModify) {
-    let count = arrayToModify.length - 1;
-    
-    return arrayToModify;
-}
+// // Modifying original array
+// function reverseArrayInPlace(arrayToModify) {    
+//     for (let i = 0; i < Math.floor(arrayToModify.length / 2); i++) {
+//         let temp = arrayToModify[i];
+//         arrayToModify[i] = arrayToModify[arrayToModify.length - 1 - i];
+//         arrayToModify[arrayToModify.length - 1 - i] = temp;
+//     }
+//     return arrayToModify;
+// }
 
-console.log(reverseArrayInPlace(test));
+// //reverseArrayInPlace() testing -- WORKS OK
+// console.log(reverseArrayInPlace(test));
+
+// ------------------------------------------   EXERCISE 2 WORKS   ---------------------------------------------------------//
