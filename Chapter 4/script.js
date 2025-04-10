@@ -1,5 +1,7 @@
 // // CHAPTER 4 EXERCISES
 
+// EXERCISE 1 (The Sum Of A Range)
+
 // // Creating an array of the range between 2 numbers
 // function range(start, end, step = 1) {
 //     //VALIDATION CHECKS
@@ -33,8 +35,33 @@
 //     return result;
 // };
 
-// //sum() testing --
+// //sum() testing -- WORKS OK
 // let sumResult = sum(test);
 // console.log(sumResult);
 
-// ------------------------------------------   EXERCISE 1 WORKS---------------------------------------------------------//
+// ------------------------------------------   EXERCISE 1 WORKS   ---------------------------------------------------------//
+
+// EXERCISE 2 (Reversing an Array)
+
+// Returning a new array
+function reverseArray(arrayToReverse) {
+   let count = arrayToReverse.length - 1;
+   let result = [];
+   for (let i = count; i >= 0; i--) {
+        result.push(arrayToReverse[i]);
+   } 
+   return result;
+}
+
+//reverseArray() testing -- WORKS OK
+let test = [1, 2, 3, 4, 5];
+// console.log(reverseArray(test));
+
+// Modifying original array
+function reverseArrayInPlace(arrayToModify) {
+    let count = arrayToModify.length - 1;
+    
+    return arrayToModify;
+}
+
+console.log(reverseArrayInPlace(test));
